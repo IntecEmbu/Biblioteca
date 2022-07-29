@@ -3,11 +3,13 @@ import routes from './routes.js'
 import cors from 'cors'
 
 const api = express()
+const port = process.env.PORT || 3333
+
 api.use(cors())
 api.use(express.json())
 
 api.use('/', routes)
 
-api.listen('3333', () =>{
-  console.log('Servidor on...')
+api.listen(port, () =>{
+  console.log(`server is running in ${port}`)
 })
