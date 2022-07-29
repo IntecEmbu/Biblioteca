@@ -1,10 +1,11 @@
-// importações das controllers 
-
 import express from "express"
 
 const router = express.Router()
 
-// rotas
-
+router.use('/*', (req, res) => {
+    res.status(404).json({
+        error: 'Not found'
+    })
+})
 
 export default router
