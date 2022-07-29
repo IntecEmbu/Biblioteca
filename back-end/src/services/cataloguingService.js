@@ -14,3 +14,5 @@ async function insertBook(data){
 
     conn.end()
 }
+
+export default {insertBook}
