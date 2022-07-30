@@ -27,4 +27,4 @@ async function getAllBooks(){
     return rows
 }
 
-export default {insertBook}
+export default {insertBook, getAllBooks}
