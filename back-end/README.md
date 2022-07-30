@@ -6,7 +6,7 @@
 <br>
 
 > ## Método POST ✉️
-> ### Rotas com os método POST
+> ### Rotas com o método POST
 
 
 #### Para inserir um livro use ```https://biblion-intec.herokuapp.com/cataloguin/insertbook```
