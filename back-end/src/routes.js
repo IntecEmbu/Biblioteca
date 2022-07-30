@@ -1,5 +1,5 @@
 import express from "express"
-import cataloguinController from "../controllers/cataloguingController.js"
+import cataloguingController from './controllers/cataloguingController.js'
 
 const router = express.Router()
 
@@ -9,6 +9,6 @@ router.use('/*', (req, res) => {
     })
 })
 
-router.use('/cataloguin', cataloguinController)
+router.use('/cataloguin', cataloguingController)
 
 export default router
