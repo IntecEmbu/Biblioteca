@@ -1,6 +1,6 @@
 import express from 'express'
 import db from '../services/cataloguingService.js'
-import {body, validationResult} from 'express-validator'
+import { body, validationResult } from 'express-validator'
 
 const router = express.Router()
 
@@ -12,7 +12,7 @@ router.post('/insertbook',[
     body('category').not().isEmpty().withMessage('Category is required'),
     body('cdd').not().isEmpty().withMessage('CDD is required'),
     body('idiom').not().isEmpty().withMessage('Idiom is required')
-], (req, res) => {
+], async (req, res) => {
 
     const errors = validationResult(req)
     if(!errors.isEmpty()){
