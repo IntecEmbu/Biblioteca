@@ -15,4 +15,16 @@ async function insertBook(data){
     conn.end()
 }
 
+async function getAllBooks(){
+    const conn = await db.connect()
+
+    const sql = 'SELECT * FROM tbl_book'
+
+    const [rows] = await conn.query(sql)
+
+    conn.end()
+
+    return rows
+}
+
 export default {insertBook}
