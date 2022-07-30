@@ -30,7 +30,20 @@ router.post('/insertbook',[
         })
     } catch (error) {
         return res.status(500).json({
-            error: error.message
+            DatabaseError: error.message
+        })
+    }
+})
+
+router.get('/getallbooks', async (req, res) => {
+    try {
+        const results = await db.getAllBooks()
+
+        res.status(200).json(results)
+
+    } catch (error) {
+        return res.status(500).json({
+            DatabaseError: error.message
         })
     }
 })
