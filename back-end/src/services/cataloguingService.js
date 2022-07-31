@@ -27,4 +27,16 @@ async function getAllBooks(){
     return rows
 }
 
+async function getCountBooks(){
+    const conn = await db.connect()
+
+    const sql = 'SELECT COUNT(*) AS total FROM tbl_book'
+
+    const [rows] = await conn.query(sql)
+
+    conn.end()
+    
+    return rows
+}
+
 export default {insertBook, getAllBooks}
