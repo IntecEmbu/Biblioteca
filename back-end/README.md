@@ -24,7 +24,7 @@
 
 <br>
 
-> ## método GET 👋
+> ## Método GET 👋
 > ### Rotas com o método GET
 
 #### Todos os livros cadastrados ```https://biblion-intec.herokuapp.com/cataloguin/getallbooks```
