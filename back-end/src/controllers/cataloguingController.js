@@ -48,4 +48,17 @@ router.get('/getallbooks', async (req, res) => {
     }
 })
 
+router.get('/getcountbooks', async (req, res) => {
+    try {
+        const results = await db.getCountBooks()
+
+        res.status(200).json(results)
+
+    } catch (error) {
+        return res.status(500).json({
+            DatabaseError: error.message
+        })
+    }
+})
+
 export default router
