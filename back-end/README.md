@@ -27,4 +27,6 @@
 > ## método GET 👋
 > ### Rotas com o método GET
 
-#### Para coletar todos os livros cadastrados ```https://biblion-intec.herokuapp.com/cataloguin/getallbooks```
+#### Todos os livros cadastrados ```https://biblion-intec.herokuapp.com/cataloguin/getallbooks```
+
+#### Quantidade de livros cadastrados ```https://biblion-intec.herokuapp.com/cataloguin/getcountbooks```
