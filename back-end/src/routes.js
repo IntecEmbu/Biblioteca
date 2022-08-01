@@ -8,7 +8,7 @@ router.use('/cataloguin', cataloguingController)
 
 router.use('/*', (req, res) => {
     res.status(404).json({
-        error: 'Not found, verify on github',
+        notfound: 'verify on github the endpoints',
         by: '@blibion'
     })
 })
