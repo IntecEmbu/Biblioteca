@@ -10,11 +10,10 @@
 <br>
 
 > ## Sobre 💡
-  ### O projeto tem uma visão de ser implementado efetivamente, pois foi verificado que o sistema antigo da instituição estava se tornando obsoleto e causando prejuizos financeiros. Além dos alunos sempre precisarem irem até a biblioteca para saber quais livros estão disponiveis.
+  ### O projeto tem uma visão de ser implementado efetivamente, pois foi verificado que o sistema antigo da instituição estava se tornando obsoleto e causando prejuizos financeiros.
   
 <br>
 
 > ## Especialidades ⚙️
-  - ### Vitrine virtual
   - ### Interface interativa
   - ### Fácil manejo
